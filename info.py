@@ -15,9 +15,9 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7254745063:AAFP4cTfh2RNPD5d-tqcLReI5UMRr0MuTa4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5397984467').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1397269319').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/itsme_kp")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001740524004'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+EmZHSiPLt7xjY2Fl')
